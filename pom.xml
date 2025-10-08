@@ -6,7 +6,7 @@
 
     <groupId>br.com.dld</groupId>
     <artifactId>supple-http-error</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.1-ga</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -30,15 +30,15 @@
         </dependency>
 
         <dependency>
-            <groupId>jakarta.validation</groupId>
-            <artifactId>jakarta.validation-api</artifactId>
-            <version>3.0.2</version>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>2.0.1.Final</version>
         </dependency>
 
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.18.0-rc1</version>
+            <version>2.14.0</version>
         </dependency>
     </dependencies>
 </project>
