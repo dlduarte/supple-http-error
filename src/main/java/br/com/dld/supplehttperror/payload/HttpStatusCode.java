@@ -1,5 +1,6 @@
 package br.com.dld.supplehttperror.payload;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import lombok.RequiredArgsConstructor;
 
 import java.util.Arrays;
@@ -84,4 +85,21 @@ public enum HttpStatusCode {
 	public boolean is4xxClientError() {return code >= 400 && code < 500;}
 
 	public boolean is5xxServerError() {return code >= 500 && code < 600;}
+
+	@JsonCreator
+	public static HttpStatusCode from(Object value) {
+		if (value instanceof Number number) {
+			int code = number.intValue();
+			return Arrays.stream(values())
+			             .filter(s -> s.code == code)
+			             .findFirst()
+			             .orElse(INTERNAL_SERVER_ERROR);
+		}
+
+		if (value instanceof String text) {
+			return HttpStatusCode.valueOf(text);
+		}
+
+		return INTERNAL_SERVER_ERROR;
+	}
 }
