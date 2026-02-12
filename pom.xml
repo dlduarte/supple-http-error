@@ -6,7 +6,7 @@
 
     <groupId>br.com.dld</groupId>
     <artifactId>supple-http-error</artifactId>
-    <version>1.0.2-ga</version>
+    <version>1.1.0-ga</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
