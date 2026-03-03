@@ -130,7 +130,6 @@ Cada sistema define seu próprio catálogo:
 ``` java
 public enum ErrorCatalog implements RFCError {
     USER_NOT_FOUND(...),
-
     INVALID_REQUEST(...);
 }
 ```
@@ -146,7 +145,6 @@ Modelagem RFC ✅
 Exceptions base ✅           
 Catálogo de domínio ✅
 Serialização HTTP ✅
-Framework adapters opcional ✅
 
 ------------------------------------------------------------------------
 

@@ -8,6 +8,35 @@
     <artifactId>supple-http-error</artifactId>
     <version>1.1.0</version>
 
+    <name>supple-http-error</name>
+    <description>A framework-agnostic Java library for standardizing error modeling, propagation and serialization in backend applications, HTTP APIs and SDKs,
+        based on RFC-7807 (Problem Details for HTTP APIs)
+    </description>
+    <url>https://github.com/dlduarte/supple-http-error</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:https://github.com/dlduarte/supple-http-error.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:dlduarte/supple-http-error.git</developerConnection>
+        <url>https://github.com/dlduarte/supple-http-error</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>dlduarte</id>
+            <name>David Duarte</name>
+            <email>dlduarte.dev@gmail.com</email>
+        </developer>
+    </developers>
+
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
